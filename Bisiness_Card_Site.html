@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #404146;
+            padding: 15px 0;
+        }
+
+        .header-2 {
+            height: 82px;
+            background-color: #fff;
+            box-shadow: inset 0px -1px 0px #C4CDD5;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: 50px;
+            background-image: url('images/logo.png')
+        }
+
+        .wrapper {
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        ul, li {
+            margin: 0;
+            list-style: none;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            margin-right: 10px;
+        }
+
+        ul li:last-child {
+            margin-right: 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #161C24;
+        }
+
+        #screen-1 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 auto;
+            background: url("https://c.wallhere.com/photos/46/0d/2817x1878_px_sea_sky_yacht-1431263.jpg!d");
+            background-size: 100%;  
+        }
+
+        .info {
+            width: 604px;
+            margin-top: 130px;
+        }
+
+        #screen-1 {
+            color: rgb(255, 255, 255);
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+
+        #screen-1 p,
+        #screen-1 h1 {
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        #screen-1 p {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background-color: #4295E4;
+            color: #fff;
+            font-size: 18px;
+            padding: 16px 37px;
+            margin-top: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0e61af;
+        }
+
+        #screen-2 {
+            background-color: #F2F8FF;
+            height: 160px;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #screen-2 .content {
+            width: 826px;
+            height: 80px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #screen-2 .content p, 
+        #screen-2 .content h3 {
+            color: #000;
+            text-align: center;
+        }
+
+
+        #screen-2 .content h3 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        #screen-2 .content p {
+            font-size: 16px;
+            margin: 0;
+            margin-top: 16px;
+        }
+
+        #screen-3 h2 {
+            font-size: 38px;
+            text-align: center;
+        }
+
+        #screen-3 .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1315px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #screen-3 .box .mini-box {
+            width: 640px;
+            height: 550px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), url(image.png);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        #screen-3 .box .mini-box img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        #screen-3 .box .mini-box .info {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+
+        #screen-3 .box .mini-box .info .name {
+            font-size: 24px;
+            margin-bottom: 42px;
+        }
+
+        #screen-3 .box .mini-box .info a {
+            color: #161C24;
+            text-decoration: none;
+            padding: 12px 78px;
+            border: 1px solid #161C24;
+            border-radius: 3px;
+        }
+
+        #screen-4 {
+            background-color: #acb1b8;
+            height: 332px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #screen-4 h3 {
+            color: #ffffff;
+            font-size: 44px;
+            text-align: center;
+        }
+
+        #screen-4 p {
+            width: 500px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #screen-4 input {
+            border: none;
+            outline: none;
+            background-color: rgb(233 243 255);
+            height: 53px;
+        }
+        #screen-4 input {
+            margin: 0 15px;
+            padding-left: 15px;
+            font-size: 16px;
+            color:#454F5B;
+        }
+
+        .box-inputs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .box-inputs button {
+            margin-top: 0;
+        }
+
+        .imgHover:hover {
+            opacity:0;
+            filter:alpha (opacity=0);
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            transition: all 2s ease;
+        }
+
+        @media (max-width: 1315px) {
+            #screen-3 .box .mini-box {
+                width: 50%;
+            }
+
+        }
+
+        @media (max-width: 1500px) {
+            #screen-1 {
+                background-size: auto 100%; 
+            }
+
+        }
+
+        @media (max-width: 1023px) {
+            #screen-3 .box .mini-box {
+                width: 100%;
+                height: 800px;
+            }
+
+            #screen-3 .box .mini-box img {
+                width: 100%;
+            }
+        }
+        @media (max-width: 445px) {
+            .header-2 {
+                height: auto;
+            }
+
+            .header-2 .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 20px;
+            }
+
+            .header-2 .wrapper .logo {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>ARCON yachts +7 (495) 937-90-00</p>
+    </header>
+    <div class="header-2">
+        <div class="wrapper">
+            <img src="https://s3.amazonaws.com/boss.yatco.com/CMS/Company/Photo/medium_450.jpg" class = "logo">
+
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="screen-1">
+        <div class="info">
+            <h1>Яхтенный брокер Arcon Yachts</h1>
+            <p>Компания Arcon Yachts Monaco специализируется на продаже, покупке, аренде, строительстве и управлении яхт. Специалисты компании оказывают клиентам полный перечень яхтенных услуг в рамках одной компании, имеющей представительства в России, Италии, Черногории, Гонконге и Украине.</p>
+
+            <button>Перейти в каталог</button>
+        </div>
+    </div>
+
+    <div id="screen-2">
+        <div class="content">
+            <div class="block-info">
+                <h3>48</h3>
+                <p>Партнёров</p>
+            </div>
+            <div class="block-info">
+                <h3>51</h3>
+                <p>Пункт продажи</p>
+            </div>
+            <div class="block-info">
+                <h3>Более 100</h3>
+                <p>Продаж в день</p>
+            </div>
+            <div class="block-info">
+                <h3>16</h3>
+                <p>Собственных проектов</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="screen-3">
+        <h2>Наши избранные яхты</h2>
+
+        <div class="box">
+            <div class="mini-box">  
+                <img src="https://arconyachts.com/system/photos/pictures/000/010/739/show/619_0394085926.jpg?1560715022">
+                <img src="https://arconyachts.com/system/photos/pictures/000/010/743/show/619_9959740611.jpg?1560716127" class = "imgHover">
+                <div class="info">
+                    <div class="name">Benetti Oasis</div>
+                    <p></p>
+                    <a href="#">Перейти</a>
+                </div>
+            </div>
+            <div class="mini-box">  
+                <img src="https://arconyachts.com/system/photos/pictures/000/018/717/show/938_2191107856.jpg?1629115956">
+                <img src="https://arconyachts.com/system/photos/pictures/000/018/712/show/938_0134288228.jpg?1629186874" class = "imgHover">
+                <div class="info">
+                    <div class="name">Galactica Super Nova</div>
+                    <p></p>
+                    <a href="#">Перейти</a>
+                </div>
+            </div>
+            <div class="mini-box">  
+                <img src="https://arconyachts.com/system/photos/pictures/000/006/274/show/62_5131360724.jpg?1449782079">
+                <img src="https://arconyachts.com/system/photos/pictures/000/006/296/show/62_7302432933.jpg?1449783217" class = "imgHover">
+                <div class="info">
+                    <div class="name">Heesen Lady Li </div>
+                    <p></p>
+                    <a href="#">Перейти</a>
+                </div>
+            </div>
+            <div class="mini-box">  
+                <img src="https://arconyachts.com/system/photos/pictures/000/018/605/show/903_2570105988.jpg?1623254445">
+                <img src="https://arconyachts.com/system/photos/pictures/000/018/604/show/903_6227594135.jpg?1623254471" class = "imgHover">
+                <div class="info">
+                    <div class="name">Feadship ANNA</div>
+                    <p></p>
+                    <a href="#">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="screen-4">
+        <h3>Мы Вам перезвоним</h3>
+
+        <p>Россия<br>
+            Ленинградское шоссе 39/7, Москва, 125212<br>
+            +7 (495) 937 90 00<br><br>
+            info@arconyachts.com</p>
+    
+        <div class="box-inputs">
+            <input placeholder="Ваше имя" type="text" style="margin-right: 0">
+            <input placeholder="Ваш телефон" type="text">
+            <button>Отправить</button>
+        </div>
+    </div>
+</body>
+</html>
